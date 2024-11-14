@@ -1,15 +1,15 @@
-// Import the timetablingservice module
+// import timetablingservice.js
 const tutorModule = require('./Josh_timetablingservice');
 
-// Add a new tutor
+// adding new tutor
 const tutor1 = tutorModule.addTutor("Alice", "Mathematics");
 console.log("Tutor added :", tutor1);
 
-// Add  tutor number 2
+// adding tutor no2
 const tutor2 = tutorModule.addTutor("Bob", "Physics");
 console.log("Tutor added:", tutor2);
 
-//Add tutor number 3
+//adding tutor no3
 const tutor3 = tutorModule.addTutor("Josh", "PE");
 console.log("Tutor added :", tutor3);
 
@@ -21,11 +21,11 @@ try {
     console.error(error.message);
 }
 
-// Get all tutors
+// get all tutors
 let allTutors = tutorModule.getAllTutors();
 console.log("Total number of tutors: " , allTutors.length);
 
-// Update a tutor's information
+// updating tutor info
 try {
     const updatedTutor = tutorModule.updateTutor(tutor1.id, "Alice Smith", "Advanced Mathematics");
     console.log("Updated tutor:", updatedTutor);
@@ -33,10 +33,14 @@ try {
     console.error(error.message);
 }
 
+// 
 allTutors = tutorModule.getAllTutors();
-console.log("Total number of tutors after updating:", allTutors);
+console.log("New updated tutors:", allTutors);
 
-// Remove a tutor by ID
+let getAllTutorsAU = tutorModule.getAllTutorsAU();
+console.log("Total number of tutors: " , getAllTutorsAU.length);
+
+// removing tutor
 try {
     tutorModule.removeTutor(tutor2.id);
     console.log("Tutor Bob removed.");

@@ -1,13 +1,13 @@
 let tutors = [{ 'id': 1, 'name' : "josh", 'subject' : "maths" }];
 
-// Add a new tutor to the database
+// Function A: adding a new tutor to the database
 function addTutor(name, subject) {
     const newTutor = { id: tutors.length + 1, name, subject };
     tutors.push(newTutor);
     return newTutor;
 }
 
-// Get a specific tutor by ID
+// Function B: getting a specific tutor by ID
 function getTutor(tutorId) {
     const tutor = tutors.find(tutor => tutor.id === tutorId);
     if (!tutor) {
@@ -16,13 +16,13 @@ function getTutor(tutorId) {
     return tutor;
 }
 
-// Function C: Gets all tutors from the database
+// Function C: getting all the tutors 
 function getAllTutors() {
 
     return tutors;
 }
 
-// Update a tutor's information
+// updating one tutor information
 function updateTutor(tutorId, newName, newSubject) {
     const tutor = tutors.find(tutor => tutor.id === tutorId);
     if (!tutor) {
@@ -38,7 +38,11 @@ function getAllTutors() {
     return tutors;
 }
 
-// Remove a tutor by ID
+function getAllTutorsAU() {
+
+    return tutors;
+}
+// remove a tutor by ID
 function removeTutor(tutorId) {
     const initialLength = tutors.length;
     tutors = tutors.filter(tutor => tutor.id !== tutorId);
@@ -53,5 +57,6 @@ module.exports = {
     getAllTutors,
     updateTutor,
     getAllTutors,
+    getAllTutorsAU,
     removeTutor
 };
