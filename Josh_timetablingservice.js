@@ -51,6 +51,12 @@ function removeTutor(tutorId) {
     }
 }
 
+// get  updated list of tutors
+
+function getUpdatedTutors() {
+    return tutors; 
+}
+
 module.exports = {
     addTutor,
     getTutor,
@@ -58,5 +64,6 @@ module.exports = {
     updateTutor,
     getAllTutors,
     getAllTutorsAU,
-    removeTutor
+    removeTutor,
+    getUpdatedTutors
 };

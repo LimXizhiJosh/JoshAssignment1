@@ -43,11 +43,11 @@ console.log("Total number of tutors: " , getAllTutorsAU.length);
 // removing tutor
 try {
     tutorModule.removeTutor(tutor2.id);
-    console.log("Tutor Bob removed.");
+    console.log("Tutor removed.");
 } catch (error) {
     console.error(error.message);
 }
 
-// Get all tutors after deletion to see if it removed
-const updatedTutors = tutorModule.getAllTutors();
-console.log("All tutors after deletion:", updatedTutors);
+// Get the updated list of tutors after removal
+const updatedTutors = tutorModule.getUpdatedTutors();
+console.log("All tutors after deletion:", updatedTutors);  
