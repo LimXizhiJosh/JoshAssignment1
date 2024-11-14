@@ -1,4 +1,4 @@
-let tutors = [{ 'id': 1, 'name' : "josh", 'subject' : "maths" }];
+let tutors = []; //empty tutor table, add in belw
 
 // Function A: adding a new tutor to the database
 function addTutor(name, subject) {
