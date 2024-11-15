@@ -1,4 +1,4 @@
-let tutors = []; //empty tutor table, add in belw
+let tutors = []; //empty tutor table, going to add in belw
 
 // Function A: adding a new tutor to the database
 function addTutor(name, subject) {
@@ -33,10 +33,7 @@ function updateTutor(tutorId, newName, newSubject) {
     return tutor;
 }
 
-function getAllTutors() {
 
-    return tutors;
-}
 
 function getAllTutorsAU() {
 

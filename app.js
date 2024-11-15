@@ -48,6 +48,6 @@ try {
     console.error(error.message);
 }
 
-// Get the updated list of tutors after removal
+// Get the updated list of tutors after removng
 const updatedTutors = tutorModule.getUpdatedTutors();
 console.log("All tutors after deletion:", updatedTutors);  

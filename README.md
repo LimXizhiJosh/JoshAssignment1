@@ -13,7 +13,11 @@ Provide the references that you have used to support your assignment.
 
 
 File Structure
+
+
 Josh_timetablingservice.js: code to manage the tutors (adding, updating, retrieving, and removing).
+
+
 app.js: Demonstrates how to use the Josh_timetablingservice.js module to perform actions
 
 Functions
@@ -27,6 +31,7 @@ getAllTutorsAU()
 
 
 addTutor()
+
 - Add a new tutor with a name and a subject
 Returns: The newly added tutor
 
@@ -37,7 +42,8 @@ function addTutor(name, subject) {
 }
 
 
-2. getTutor()
+getTutor()
+
  - retrieve information for a tutor by theri ID
 
 Returns: The tutor chosen specifically
@@ -51,6 +57,7 @@ function getTutor(tutorId) {
 }
 
 getAllTutors()
+
  - retrieve all tutors
 
 Returns: All tutors in databse
@@ -58,6 +65,7 @@ Returns: All tutors in databse
 let allTutors = tutorModule.getAllTutors();
 
 updateTutor()
+
 - update a tutor name and subject , throw error if no such tutor exists
 
 Returns: Update a specific tutor information
@@ -72,6 +80,7 @@ try {
 
 
 removeTutor()
+
 - remove a tutor by ID
 
 Returns: Remove a tutor from databse
@@ -84,6 +93,7 @@ try {
 }
 
 getAllTutorsAU()
+    
 - retrieve all tutors after updating
 
 Returns: Retrieve all the new tutors after updating process
